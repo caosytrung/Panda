@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/iv_title"
+        android:layout_gravity="center"
+        android:src="@drawable/music"
+        />
+  <LinearLayout
+      android:layout_width="260dp"
+      android:layout_marginLeft="16dp"
+      android:orientation="vertical"
+      android:layout_height="72dp">
+      <TextView
+      android:layout_width="256dp"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:text="Bai Hat cho Em La Me Cua Anh "
+      android:layout_marginTop="8dp"
+          android:id="@+id/tv_name_song"
+      android:layout_gravity="center"
+          android:singleLine="true"
+      android:textSize="16dp"
+      android:textColor="@color/black"/>
+      <TextView
+          android:id="@+id/tv_artist"
+          android:layout_width="256dp"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:text=" M4U "
+
+          android:layout_gravity="top"
+          android:textSize="14dp"
+          android:textColor="@color/black"/>
+  </LinearLayout>
+
+
+</LinearLayout>

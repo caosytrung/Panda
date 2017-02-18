@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="8dp"
+
+    android:layout_marginRight="8dp"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+    <TableRow
+        android:id="@+id/tr_top"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_head"
+        >
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:src="@drawable/menu_2"
+            />
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PandaMp3"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/black"
+            />
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:id="@+id/iv_searchnhac"
+            android:src="@drawable/search"
+            android:layout_gravity="center"
+            android:layout_marginLeft="142dp"
+            />
+    </TableRow>
+    <HorizontalScrollView
+        android:layout_below="@id/tr_top"
+        android:id="@+id/scr_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TabLayout
+                android:layout_width="400dp"
+                android:layout_height="36dp"
+
+
+                android:background="@color/green_light"
+                android:id="@+id/tab_head"
+                ></android.support.design.widget.TabLayout>
+        </ScrollView>
+
+    </HorizontalScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@id/scr_view"
+        android:layout_width="match_parent"
+        android:id="@+id/pager_body"
+        android:layout_height="500dp">
+    </android.support.v4.view.ViewPager>
+
+
+</RelativeLayout>
